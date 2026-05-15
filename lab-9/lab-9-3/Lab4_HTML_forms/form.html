@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма замовлення</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+
+    <div class="header">Книжковий магазин</div>
+
+    <div class="content">
+        <div class="sidebar">
+            <div class="menu">
+                <a href="#">Головна</a>
+                <a href="#">Новинки</a>
+                <a href="#">Каталог книг</a>
+                <a href="form.html">Форма заказу</a>
+                <a href="#">Контакти</a>
+            </div>
+
+            <div class="news">
+                <h3>Новинки</h3>
+                <div class="book">iCone<br>Steve Jobs</div>
+                <p>iCone: Steve Jobs</p>
+            </div>
+        </div>
+
+        <div class="main">
+            <h2>Форма заказу</h2>
+
+            <p align="center">Для заказу товару заповніть поля наступної форми.</p>
+            <p align="center">Всі поля обов'язкові для заповнення.</p>
+
+            <form action="#" method="post">
+                <table class="form-table">
+                    <tr>
+                        <td>Автор</td>
+                        <td><input type="text" name="author"></td>
+                    </tr>
+                    <tr>
+                        <td>Назва</td>
+                        <td><input type="text" name="title"></td>
+                    </tr>
+                    <tr>
+                        <td>Кількість</td>
+                        <td><input class="qty" type="text" name="count"></td>
+                    </tr>
+                    <tr>
+                        <td>Адреса доставки</td>
+                        <td><input type="text" name="address"></td>
+                    </tr>
+                    <tr>
+                        <td>Спосіб доставки</td>
+                        <td>
+                            <input type="radio" name="delivery" value="post"> поштою<br>
+                            <input type="radio" name="delivery" value="courier"> кур'єром
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Спосіб оплати</td>
+                        <td>
+                            <select name="payment">
+                                <option value="cash">Налична</option>
+                                <option value="card">Банківська карта</option>
+                                <option value="online">Онлайн-оплата</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Додаткові<br>побажання</td>
+                        <td><textarea name="comment"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Ознайомлен з умовами доставки</td>
+                        <td><input type="checkbox" name="agree"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input class="btn" type="submit" value="Відправить"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer"><b>E-mail</b> info@bookshop.com.ua</div>
+
+</div>
+</body>
+</html>

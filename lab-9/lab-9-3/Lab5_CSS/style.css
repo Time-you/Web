@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    background-color: #f5f5d5;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #333333;
+}
+
+#container {
+    width: 900px;
+    margin: 20px auto;
+    background-color: #ffffdd;
+    border: 3px solid #2d5f9a;
+}
+
+#header {
+    background-color: #f2f3b9;
+    color: #003399;
+    text-align: center;
+    padding: 25px;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+#layout {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    gap: 30px;
+    padding: 35px;
+}
+
+#menu a {
+    display: block;
+    color: #8b2c22;
+    font-size: 19px;
+    margin-bottom: 8px;
+    text-decoration: underline;
+}
+
+#menu a:hover {
+    color: #003399;
+}
+
+#news {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.book-cover {
+    width: 120px;
+    height: 170px;
+    background: linear-gradient(135deg, #eeeeee, #4d6685);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px auto;
+    border: 2px solid #555555;
+    font-weight: bold;
+    text-align: center;
+}
+
+#content h2 {
+    color: #003399;
+    text-align: center;
+    font-size: 30px;
+}
+
+#content p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.contact-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    font-size: 18px;
+}
+
+.contact-table td {
+    border: 1px solid #999999;
+    padding: 10px;
+}
+
+#footer {
+    background-color: #f2f3b9;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.red {
+    color: #cc3300;
+    font-weight: bold;
+}
