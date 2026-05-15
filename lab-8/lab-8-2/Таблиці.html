@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблиці</title>
+    <style>
+        body {
+            background-color: #eaf6ff;
+            font-family: "Times New Roman", serif;
+            margin: 30px;
+        }
+
+        h1 {
+            font-family: "Arial Black", Arial, sans-serif;
+            color: blue;
+            font-style: italic;
+            text-align: center;
+            letter-spacing: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-bottom: 25px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .caption {
+            font-weight: bold;
+            font-style: italic;
+            margin-top: 20px;
+        }
+
+        .green { background-color: #00cc66; color: white; }
+        .orange { background-color: #ffcc99; }
+        .blue { background-color: #336699; color: white; }
+        .yellow { background-color: #ffcc33; }
+        .header-green { background-color: #00e676; font-weight: bold; }
+        .red-row { background-color: #ff7f7f; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h1>Створення таблиць</h1>
+
+    <marquee>Я, Іванський Володимир, вивчаю створення таблиць в HTML</marquee>
+
+    <img src="table-image.svg" width="100" height="100" align="right" border="3" title="Приклад таблиці" alt="Таблиця">
+
+    <p align="justify" style="font-size: 22px; line-height: 2;">
+        Таблиці в HTML створюються за допомогою тегу &lt;table&gt;.
+        Рядки таблиці задаються тегом &lt;tr&gt;, а клітинки — тегом &lt;td&gt;.
+        Для об’єднання клітинок по вертикалі використовують атрибут rowspan,
+        а по горизонталі — colspan.
+    </p>
+
+    <hr>
+
+    <div class="caption">Таблиця 1</div>
+    <table width="200">
+        <tr><td class="green">1</td><td class="orange">2</td></tr>
+        <tr><td class="orange">3</td><td class="green">4</td></tr>
+    </table>
+
+    <div class="caption">Таблиця 2</div>
+    <table width="200">
+        <tr><td rowspan="2">1</td><td>2</td></tr>
+        <tr><td>3</td></tr>
+        <tr><td>4</td><td>5</td></tr>
+    </table>
+
+    <div class="caption">Таблиця 3</div>
+    <table width="50" height="35">
+        <tr><td>1</td><td rowspan="2">3</td></tr>
+        <tr><td>2</td></tr>
+        <tr><td>4</td><td>5</td></tr>
+    </table>
+
+    <div class="caption">Таблиця 4</div>
+    <table width="200">
+        <tr><td>1</td><td colspan="2">2</td></tr>
+        <tr><td>3</td><td>4</td><td>5</td></tr>
+    </table>
+
+    <div class="caption">Таблиця 5</div>
+    <table width="650">
+        <tr>
+            <th class="header-green">Пошукова система</th>
+            <th class="header-green">Url-адреса пошукової системи</th>
+        </tr>
+        <tr><td>Пошукова система Яндекс</td><td><a href="https://yandex.ru">www.yandex.ru</a></td></tr>
+        <tr><td>Пошукова система Google</td><td><a href="https://google.ua">www.google.ua</a></td></tr>
+        <tr><td>Пошукова система Rambler</td><td><a href="https://rambler.ru">www.rambler.ru</a></td></tr>
+        <tr><td colspan="2" class="red-row">Користуйтеся пошуковими системами</td></tr>
+    </table>
+
+    <div class="caption">Таблиця 6</div>
+    <table width="450">
+        <tr><th class="blue">Мова</th><th class="yellow">Призначення</th><th class="blue">Рівень</th></tr>
+        <tr><td>HTML</td><td>Структура сторінки</td><td>Початковий</td></tr>
+        <tr><td>CSS</td><td>Оформлення сторінки</td><td>Початковий</td></tr>
+        <tr><td>JavaScript</td><td>Інтерактивність</td><td>Середній</td></tr>
+    </table>
+
+</body>
+</html>
