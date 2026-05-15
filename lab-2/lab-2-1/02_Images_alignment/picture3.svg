@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="220">
+<rect width="180" height="220" fill="#fff3c4" stroke="#777" stroke-width="2"/>
+<text x="90" y="35" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle" fill="#7a4a00">Dance</text>
+<text x="90" y="62" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle" fill="#7a4a00">Anthology</text>
+<text x="90" y="100" font-family="Arial" font-size="38" font-weight="bold" text-anchor="middle" fill="#003399">3</text>
+<circle cx="90" cy="145" r="35" fill="#ffffff" stroke="#333" stroke-width="3"/>
+<text x="90" y="153" font-family="Arial" font-size="18" text-anchor="middle" fill="#222">Cat</text>
+</svg>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Вирівнювання зображень</title>
+    <style>
+        body {
+            background: #ffffff;
+            font-family: "Times New Roman", serif;
+            margin: 40px;
+            font-size: 26px;
+            line-height: 1.4;
+        }
+        .block {
+            width: 850px;
+            min-height: 260px;
+            margin: 30px auto;
+            clear: both;
+        }
+        img {
+            width: 180px;
+            height: 220px;
+            margin: 10px 45px;
+        }
+        .left-img {
+            float: left;
+        }
+        .right-img {
+            float: right;
+        }
+        .text-left {
+            text-align: left;
+            padding-top: 55px;
+        }
+        .text-center {
+            text-align: center;
+            padding-top: 55px;
+        }
+        .text-right {
+            text-align: right;
+            padding-top: 65px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="block">
+    <img src="picture1.svg" class="left-img" alt="Dance Anthology 1">
+    <p class="text-left">
+        Цей малюнок знаходиться зліва і<br>
+        текст вирівнюється по лівій границі.<br>
+        Ефект досягається без таблиці
+    </p>
+</div>
+
+<div class="block">
+    <img src="picture2.svg" class="left-img" alt="Dance Anthology 2">
+    <p class="text-center">
+        Цей малюнок розміщений ліворуч і<br>
+        текст вирівнюється по центру.<br>
+        Ефект досягається без таблиці
+    </p>
+</div>
+
+<div class="block">
+    <img src="picture3.svg" class="right-img" alt="Dance Anthology 3">
+    <p class="text-right">
+        Цей малюнок знаходиться<br>
+        справа і текст вирівнюється по<br>
+        правій межі. Ефект досягається без<br>
+        таблиці
+    </p>
+</div>
+
+</body>
+</html>

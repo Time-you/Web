@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="210">
+<rect width="160" height="210" fill="#f7f1d1" stroke="#444" stroke-width="2"/>
+<rect x="18" y="25" width="124" height="145" fill="#2d5f9a"/>
+<text x="80" y="70" font-family="Arial" font-size="18" text-anchor="middle" fill="white">Web-дизайн</text>
+<text x="80" y="100" font-family="Arial" font-size="18" text-anchor="middle" fill="white"></text>
+<text x="80" y="190" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Web-дизайн</text>
+</svg>
