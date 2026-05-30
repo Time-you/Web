@@ -1,0 +1,18 @@
+
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;margin:0}
+header{background:#222;color:#fff;padding:10px;position:sticky;top:0}
+.nav{display:flex;gap:10px}
+.nav a,.signin{color:white;text-decoration:none;background:#c9a227;padding:8px 12px;border:none}
+.hero{padding:60px;text-align:center;background:linear-gradient(90deg,#4db6e5,#87ceeb);animation:fadein 2s}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:20px}
+.card{border:1px solid #ccc;padding:10px}
+.topbtn{position:fixed;right:20px;bottom:20px;padding:10px;transition:all .4s}
+@keyframes fadein{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+@media(max-width:768px){
+.nav{display:none}
+.nav.show{display:flex;flex-direction:column}
+.menu-toggle{display:block}
+.signin{position:fixed;bottom:10px;left:10px}
+.reviews{grid-template-columns:1fr}
+}
