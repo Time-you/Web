@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ЛР №1 JavaScript</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="nav">
+<div class="logo">IV
+<div class="card">Іванський Володимир<br>ЛР №1 JavaScript</div>
+</div>
+<a href="#calc">Калькулятор</a>
+<a href="#equation">Рівняння</a>
+<a href="#text">Редактор</a>
+</nav>
+
+<section id="calc">
+<h2>Калькулятор</h2>
+<input id="a" type="number">
+<select id="op"><option>+</option><option>-</option><option>*</option><option>/</option></select>
+<input id="b" type="number">
+<button id="calcBtn">Обчислити</button>
+<div id="calcRes"></div>
+</section>
+
+<section id="equation">
+<h2>Квадратне рівняння</h2>
+<input id="qa" placeholder="a">
+<input id="qb" placeholder="b">
+<input id="qc" placeholder="c">
+<button id="eqBtn">Знайти корені</button>
+<div id="eqRes"></div>
+</section>
+
+<section id="text">
+<h2>Підрахунок слів</h2>
+<textarea id="txt"></textarea>
+<button id="txtBtn">Порахувати</button>
+<div id="txtRes"></div>
+</section>
+
+<script src="js/app.js"></script>
+</body>
+</html>
