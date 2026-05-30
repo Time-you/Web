@@ -1,0 +1,46 @@
+
+body{
+    font-family:Arial,sans-serif;
+    margin:0;
+    background:#f4f4f4;
+}
+header{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+nav{
+    background:#34495e;
+    padding:10px;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-right:15px;
+}
+nav a:hover{
+    color:yellow;
+}
+.card{
+    background:white;
+    margin:20px;
+    padding:20px;
+    border:2px solid #ccc;
+    border-radius:10px;
+}
+button{
+    padding:10px 20px;
+}
+button:hover{
+    background:#3498db;
+    color:white;
+}
+.note::before{
+    content:"★ ";
+    color:red;
+}
+.note::first-letter{
+    font-size:200%;
+    font-weight:bold;
+}

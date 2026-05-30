@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Анкета</title>
+<style>
+body{font-family:Arial;background:#f5f5f5}
+form{width:700px;margin:auto;background:white;padding:20px;border-radius:8px}
+h1{text-align:center}
+label{display:block;margin-top:10px}
+</style>
+</head>
+<body>
+<form>
+<h1>Анкета</h1>
+
+<label>ПІБ:
+<input type="text" placeholder="Введіть ПІБ">
+</label>
+
+<label>Пароль (5 символів):
+<input type="password" maxlength="5">
+</label>
+
+<label>Стать:</label>
+<input type="radio" name="sex"> Чоловіча
+<input type="radio" name="sex"> Жіноча
+
+<label>Вид діяльності:</label>
+<select>
+<option selected>Студент</option>
+<option>Викладач</option>
+<option>Програміст</option>
+<option>Дизайнер</option>
+<option>Менеджер</option>
+</select>
+
+<label>Інтереси:</label>
+<input type="checkbox"> Спорт
+<input type="checkbox"> Музика
+<input type="checkbox"> Подорожі
+<input type="checkbox"> ІТ
+
+<label>Країна:</label>
+<select>
+<option>Україна</option>
+<option>Польща</option>
+<option>Німеччина</option>
+</select>
+
+<label>Коментар:</label>
+<textarea rows="5" cols="50"></textarea>
+
+<br><br>
+<input type="submit" value="Надіслати">
+<input type="reset" value="Очистити">
+</form>
+</body>
+</html>
