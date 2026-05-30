@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>ЛР Форми Варіант 4</title>
+<style>
+body{font-family:Arial;margin:20px}
+fieldset{margin-bottom:15px}
+</style>
+</head>
+<body>
+
+<form lang="uk" style="padding:10px" accept-charset="UTF-8"
+target="_self" autocomplete="on" enctype="multipart/form-data">
+
+<fieldset>
+<legend id="lg1" style="color:blue" dir="ltr">Анкета слухача</legend>
+
+<label class="lbl" form="course" title="Email">Email:</label>
+<input type="email" required autofocus maxlength="50"
+autocomplete="email" title="Введіть email"><br><br>
+
+<input type="tel" title="Телефон"><br><br>
+
+<input type="url" title="Сайт"><br><br>
+
+<input type="month"><br><br>
+
+<input type="week"><br><br>
+
+<label><input type="checkbox"> Отримувати новини</label><br><br>
+
+<input type="file" multiple formenctype="multipart/form-data"><br><br>
+
+<input type="image" src="https://via.placeholder.com/80x30.png?text=Send"
+height="30" alt="send" formtarget="_self">
+</fieldset>
+
+<fieldset>
+<legend id="lg2" style="color:green" dir="ltr">Коментар</legend>
+
+<textarea name="comment" wrap="soft" form=""
+title="Коментар" placeholder="Ваш текст"
+cols="50" disabled></textarea>
+</fieldset>
+
+<optgroup label="dummy" title="group" lang="uk"></optgroup>
+
+<datalist id="courses" dir="ltr" style="color:red" title="Курси">
+<option value="HTML">
+<option value="CSS">
+<option value="JavaScript">
+</datalist>
+
+<meter style="width:200px" lang="uk" class="m1" max="100" low="30" value="70">
+70%
+</meter>
+
+<details dir="ltr" open id="info">
+<summary>Інформація</summary>
+Варіант 4. Робота з формами.
+</details>
+
+<br><br>
+<button autofocus value="send" formmethod="get" type="submit">Надіслати</button>
+
+</form>
+
+</body>
+</html>
