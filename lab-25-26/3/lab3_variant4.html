@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Лабораторна №3 Варіант 4</title>
+<script>
+function checkTest(){
+ let answers = ["1995","Netscape","Undefined","while","math"];
+ let score = 0;
+
+ for(let i=1;i<=5;i++){
+   let selected = document.querySelector('input[name="q'+i+'"]:checked');
+   if(selected && selected.value === answers[i-1]) score++;
+ }
+
+ let grade;
+ if(score >= 5) grade = "Відмінно";
+ else if(score >= 4) grade = "Добре";
+ else if(score >= 3) grade = "Задовільно";
+ else grade = "Незадовільно";
+
+ document.getElementById("result").innerHTML =
+   "Балів: " + score + "<br>Оцінка: " + grade;
+}
+</script>
+</head>
+<body>
+<h2>Тест з Web-орієнтованого програмування</h2>
+
+<p>1. В якому році була створена JavaScript?</p>
+<label><input type="radio" name="q1" value="1998">1998</label>
+<label><input type="radio" name="q1" value="1995">1995</label>
+<label><input type="radio" name="q1" value="2001">2001</label>
+
+<p>2. Якою компанією була створена JavaScript?</p>
+<label><input type="radio" name="q2" value="Microsoft">Microsoft</label>
+<label><input type="radio" name="q2" value="Netscape">Netscape</label>
+<label><input type="radio" name="q2" value="Sun">Sun</label>
+
+<p>3. Що повертає typeof для невизначеної змінної?</p>
+<label><input type="radio" name="q3" value="Undefined">Undefined</label>
+<label><input type="radio" name="q3" value="Boolean">Boolean</label>
+<label><input type="radio" name="q3" value="String">String</label>
+
+<p>4. Який оператор циклу виконується поки умова істинна?</p>
+<label><input type="radio" name="q4" value="for">for</label>
+<label><input type="radio" name="q4" value="break">break</label>
+<label><input type="radio" name="q4" value="while">while</label>
+
+<p>5. Який об'єкт містить математичні функції?</p>
+<label><input type="radio" name="q5" value="math">math</label>
+<label><input type="radio" name="q5" value="matrix">matrix</label>
+<label><input type="radio" name="q5" value="mathematics">mathematics</label>
+
+<br><br>
+<button onclick="checkTest()">Перевірити</button>
+<div id="result"></div>
+
+</body>
+</html>

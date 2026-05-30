@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Лабораторна №2 Варіант 4</title>
+<style>
+body{font-family:Arial;margin:20px}
+input{margin:5px}
+.bar{display:inline-block;width:80px;margin-right:10px;background:#4caf50;color:white;text-align:center}
+#chart{margin-top:20px;height:250px;display:flex;align-items:flex-end}
+</style>
+<script>
+function classifyStudents(){
+ let n=parseInt(document.getElementById('n').value);
+ let excellent=0, good=0, pass=0, fail=0;
+
+ for(let i=1;i<=n;i++){
+   let name=prompt("Прізвище студента №"+i);
+   let m1=parseInt(prompt("Оцінка за КР1"));
+   let m2=parseInt(prompt("Оцінка за КР2"));
+
+   if(m1==5 && m2==5) excellent++;
+   else if(m1>=4 && m2>=4) good++;
+   else if(m1>=3 && m2>=3) pass++;
+   else fail++;
+ }
+
+ document.getElementById("res").innerHTML =
+ "Відмінники: "+excellent+"<br>"+
+ "Хорошисти: "+good+"<br>"+
+ "Встигаючі: "+pass+"<br>"+
+ "Невстигаючі: "+fail;
+
+ let data=[excellent,good,pass,fail];
+ let names=["Відмінники","Хорошисти","Встигаючі","Невстигаючі"];
+ let chart=document.getElementById("chart");
+ chart.innerHTML="";
+ for(let i=0;i<data.length;i++){
+   let d=document.createElement("div");
+   d.className="bar";
+   d.style.height=(data[i]*40+20)+"px";
+   d.innerHTML=names[i]+"<br>"+data[i];
+   chart.appendChild(d);
+ }
+}
+</script>
+</head>
+<body>
+<h2>Класифікація студентів та діаграма</h2>
+Кількість студентів:
+<input type="number" id="n" value="3">
+<button onclick="classifyStudents()">Обробити</button>
+<div id="res"></div>
+<div id="chart"></div>
+</body>
+</html>

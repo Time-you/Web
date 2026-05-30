@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Лабораторна №1</title>
+<script>
+function calculateSalary() {
+    let hours = parseFloat(prompt("Введіть кількість відпрацьованих годин:"));
+    let rate = parseFloat(prompt("Введіть оплату за 1 годину:"));
+    if (!isNaN(hours) && !isNaN(rate)) {
+        document.getElementById("salary").value = (hours * rate).toFixed(2) + " грн";
+    } else {
+        alert("Помилка введення даних!");
+    }
+}
+</script>
+</head>
+<body>
+<h2>Розрахунок зарплати працівника</h2>
+<label>Заробітна плата:</label>
+<input type="text" id="salary" onfocus="calculateSalary()">
+</body>
+</html>

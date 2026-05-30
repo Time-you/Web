@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Лабораторна №4 Варіант 4</title>
+<script>
+function calculateCost() {
+    let course = document.getElementById("course").value;
+    let duration = parseInt(document.getElementById("duration").value);
+
+    let prices = {
+        "Інформатика": {36:250,64:500,128:1000},
+        "Бази даних": {36:400,64:800,128:1600},
+        "Ресурси Інтернет": {36:300,64:600,128:1200},
+        "Аналіз алгоритмів": {36:600,64:1200,128:2400}
+    };
+
+    let cost = prices[course][duration];
+
+    let lang = document.querySelector('input[name="lang"]:checked').value;
+    if(lang === "Англійська") cost *= 1.2;
+
+    let report = document.querySelector('input[name="report"]:checked').value;
+
+    document.getElementById("result").innerHTML =
+      "Курс: " + course + "<br>" +
+      "Тривалість: " + duration + " год.<br>" +
+      "Мова: " + lang + "<br>" +
+      "Звітність: " + report + "<br>" +
+      "Вартість: " + cost.toFixed(2) + " грн";
+}
+</script>
+</head>
+<body>
+<h2>Анкета слухача курсів</h2>
+
+<p>Курс:</p>
+<select id="course">
+<option>Інформатика</option>
+<option>Бази даних</option>
+<option>Ресурси Інтернет</option>
+<option>Аналіз алгоритмів</option>
+</select>
+
+<p>Тривалість:</p>
+<select id="duration">
+<option value="36">36</option>
+<option value="64">64</option>
+<option value="128">128</option>
+</select>
+
+<p>Мова:</p>
+<label><input type="radio" name="lang" value="Українська" checked>Українська</label>
+<label><input type="radio" name="lang" value="Англійська">Англійська</label>
+
+<p>Звітність:</p>
+<label><input type="radio" name="report" value="Екзамен" checked>Екзамен</label>
+<label><input type="radio" name="report" value="Залік">Залік</label>
+
+<br><br>
+<button onclick="calculateCost()">Розрахувати</button>
+
+<div id="result" style="margin-top:20px;font-weight:bold;"></div>
+</body>
+</html>
